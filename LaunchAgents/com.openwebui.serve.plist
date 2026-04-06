@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.openwebui.serve</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/homebrew/bin/open-webui</string>
+    <string>serve</string>
+    <string>--port</string>
+    <string>3000</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/tmp/openwebui.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/openwebui.err</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key>
+    <string>/Users/kkamssi119</string>
+    <key>USER</key>
+    <string>kkamssi119</string>
+    <key>OLLAMA_BASE_URL</key>
+    <string>http://localhost:11434</string>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>DATA_DIR</key>
+    <string>/Users/kkamssi119/.open-webui</string>
+    <key>WEBUI_SECRET_KEY</key>
+    <string>mac-openwebui-secret-key-2024-kkamssi</string>
+  </dict>
+</dict>
+</plist>
